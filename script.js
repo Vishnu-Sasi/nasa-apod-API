@@ -10,7 +10,6 @@ function randomDogImage(){
     let request  = new XMLHttpRequest()
     request.onload = function(){
        let parsedData= JSON.parse(request.response)
-       console.log(parsedData)
         let imageUrl = parsedData.hdurl
         image.src = imageUrl
         date.innerHTML = parsedData.date
