@@ -6,7 +6,7 @@ const details = document.getElementById('details')
 
 
 
-function randomDogImage(){
+function nasaApi(){
     let request  = new XMLHttpRequest()
     request.onload = function(){
        let parsedData= JSON.parse(request.response)
@@ -20,4 +20,4 @@ function randomDogImage(){
     request.send()
 }
 
-btn.addEventListener('click',randomDogImage)
+btn.addEventListener('click',nasaApi)
